@@ -1,45 +1,53 @@
-*{
-    margin: 0;  
-    padding: 0;
-}
-
 /*ESTILIZAÇÃO DO CORPO DO SLIDE*/
+.slideTelaInicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #sliders{
 	list-style: none;  
     position: relative; 
-	width: 700px;
-	height: 700px;
-    margin:0 auto;
+	width: 100%;
+	height: 600px;
     overflow: hidden;
 }
 /*CONFUGURAÇÃO DOS ITENS DO SLIDE*/
+#sliders img{
+    width: 100%;
+}
 #sliders li{
 	position: absolute;
-	top:20px;
+	top:0;
 	left:0;
 	opacity: 0;
 	z-index: 0;
 	-webkit-transition: opacity 2s;
 	-moz-transition: opacity 2s;
-	transition: opacity 2s;
+    transition: opacity 2s;
+    border-radius: 20px;
 } 
 #sliders li.slider-active{
 	z-index: 1;
 	opacity: 1;
 }
 
-/*OPÇÕES SOBRE AS FORMAS DE COMER*/
-.pagina-conteudo-FormasServico{
-    background: #f6f6f6;
-}
-.modelo-comer{
+/*TÍTULOS PARA FORMAS DE COMER E ATENDIMENTO*/
+.modelo-title{
     text-align: center;
     position: relative;
     margin-right: 20px;
     margin-left: 20px;
-    color: #ff4040;
-    padding-top: 30px;
+    color: #B2111E;
+    padding: 40px;
+    font-size: 40px;
 }
+
+/*OPÇÕES SOBRE AS FORMAS DE COMER*/
+.pagina-conteudo-FormasServico{
+    background: #f6f6f6;
+    margin: 60px 0px;
+}
+
 .formasComer{
     display: flex;
     text-align: center;
@@ -47,94 +55,84 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    margin-top: 30px;
+    margin: 20px 10px;
+    padding: 20px;
 }
 /*ESTILIZAÇÃO(MODELO DE ATENDIMENTO/ FORMAS DE ATENDIMENTO)*/
-h3 .leg-Rod{
-    text-decoration: none;
-    color: black;
-}
-h3 .leg-Carte{
-    text-decoration: none;
-    color: black;
-}
-h3 .leg-Saq{
-    text-decoration: none;
-    color: black;
-}
-/*ESTILIZAÇÃO(MODELO DE ATENDIMENTO/ FORMAS DE ATENDIMENTO / IMAGENS)*/
-.imgContainer .img-responsive{
-    width: 200px;
-    height: 200px;
-}
-.imgContainer .img-responsive:hover{
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-}
-.imgContainer2 .img-responsive2{
-    width: 200px;
-    height: 200px;
-}
-.imgContainer2 .img-responsive2:hover{
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-}
-.imgContainer3 .img-responsive3{
-    width: 200px;
-    height: 200px;
-}
-.imgContainer3 .img-responsive3:hover{
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
+.modeloAtendimento{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
+h3 .leg{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.icon-box-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.icon-box-body p{
+    width: 100%;
+}
+
+/*ESTILIZAÇÃO(MODELO DE ATENDIMENTO/ FORMAS DE ATENDIMENTO / IMAGENS)*/
+.imgContainer .img-responsive-at{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 40px;
+}
+.imgContainer .img-responsive-at:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
 
 /*PRATOS DO DIA */
 .página-conteudo-pratos{
-    background: #f6f6f6;
+    background:#f6f6f6;
+    margin-bottom: 60px;
 }
 .container-pratos{
     text-align: center;
-    margin-top: 50px;
-}
-.container-pratos .sensacao{
-    position: relative;
-    margin-right: 20px;
-    margin-left: 20px;
-    color: #ff4040;
 }
 .pratosDia{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 40px;
+    flex-flow: row wrap;
+    padding: 20px;
 }
-
 .imgContainer-pratos .img-responsive{
     width: 200px;
     height: 200px;
-    margin-top: 10px;
+    margin: 20px 10px 20px 10px;
+    border-radius: 10px;
 }
-.imgContainer-pratos .img-responsive2{
-    width: 200px;
-    height: 200px;
-    margin-top: 10px;
+.imgContainer-pratos .img-responsive:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
-.imgContainer-pratos .img-responsive3{
-    width: 200px;
-    height: 200px;
-    margin-top: 10px;
+.icone-prato h4{
+    font-size: 24px;
+    font-weight: bold;
 }
-.imgContainer-pratos .img-responsive4{
-    width: 200px;
-    height: 200px;
-    margin-top: 10px;
-}
-.imgContainer-pratos .img-responsive5{
-    width: 200px;
-    height: 200px;
-    margin-top: 10px;
+.icon-preco-prato p{
+    font-size: 20px;
+    font-weight: 500;
 }

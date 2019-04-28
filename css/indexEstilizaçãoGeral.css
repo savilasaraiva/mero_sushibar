@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 *{
     margin: 0;  
     padding: 0;
+}
+
+body{
+    background-image: url(../img/wallpaper_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Varela Round', sans-serif;
 }
 
 /*HEADER DO HTML*/
@@ -13,6 +23,7 @@
     background: #161616;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .cabecalho-principal-link{
     color: white;
@@ -30,75 +41,88 @@
     justify-content: space-between;
     text-decoration: none;
     margin-right: 30px;
-
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
 }
 .nav-main a{
-    flex-direction: row;
+    float: right;
+    display: block;
     text-align: center;
     padding: 35px;
-    text-decoration: none;
     font-size: 20px;
     font-weight: 200px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    border-bottom: solid #ff000000 2px;
 }
-
 .nav-main a:hover{
-    background-color: #ff4040;
     color: white;
-    padding: 35px;
-
+    padding: 10px 20px 10px 20px;
+    border-bottom: solid #B2111E 2px;
 }
 
 /*RODAPÉ DA PÁGINA-FOOTER*/
 .contato-rodape{
-    background: #161616;
+    background: #000000;
+    color: rgb(255, 255, 255);
+}
+.contato-rodape .social-icon{
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contato-rodape .social-icon a{
+    text-decoration: none;
+    color: white;
+}
+.contato-rodape .social-icon img{
+    width: 40px;
 }
 .row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: stretch;
     flex-wrap: wrap;
-    margin-top: 200px;
-    background: #161616;
+    background: #000000;
+    padding: 20px 0px;
 }
 .contato-rodape{
     text-align: center;
-    background: #161616;
+    background: #000000;
 }
 .lista-contatos{
     list-style-type: none;
 }
 .horario-funciona{
-    color: #ff4040;
+    color: #BAC1C9;
     text-align: center;
 }
 .contatos{
-    color: #ff4040;
+    color: #BAC1C9;
 }
 .info-det{
     text-decoration: none;
-    color: #ff4040;
+    color: #BAC1C9;
 }
 .info-det .gmail{
-    color: #ff4040;
-    text-decoration: none;
-}
-.info-det .facebook{
-    color: #ff4040;
-    text-decoration: none;
-}
-.info-det .instagram{
-    color: #ff4040;
+    color: #BAC1C9;
     text-decoration: none;
 }
 .horarioFun{
-    color: #ff4040;
+    color: #BAC1C9;
 }
-.TabHorFun tbody tr td{
-    color: #ff4040;
+
+.TabHorFun tbody tr td {
+  color: #BAC1C9;
 }
+
 .nome{
-    color: #ff4040;
     padding-top: 10px;
     text-align: center;
-    background: #161616;
+    background: #B2111E;
+    padding: 10px;
 }

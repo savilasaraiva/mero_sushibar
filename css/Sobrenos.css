@@ -1,14 +1,12 @@
 /*CORPO DO SOBRE NÓS*/
-
 h1{
-    color: #ff4040;
-    margin-top: 10px;
-    margin-left: 20px;
+    color: #B2111E;
+    margin: 20px;
+    font-size: 40px;
+    text-align: center;
 }
-
 .container{
     background: #f6f6f6;
-    margin-top: 20px;
 }
 .txtSobreNos{
     display: flex;
@@ -19,10 +17,12 @@ h1{
     margin-top: 20px;
 }
 .texto_sobrenos{
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: justify;
-    margin-left: 10px;
-    margin-right: 10px;
+    font-size: 24px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 /*FOOTER*/
