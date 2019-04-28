@@ -36,7 +36,21 @@ h1{
 .imgContainer-cardapio .img-responsive{
     width: 200px;
     height: 200px;
-    margin-top: 10px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.imgContainer-cardapio .img-responsive:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.icone-prato h4{
+    font-size: 24px;
+    font-weight: bold;
+}
+.icon-preco-prato p{
+    font-size: 20px;
+    font-weight: 500;
 }
 .adcPedido .botao-adcPed{
     border-radius: 16px;
@@ -45,6 +59,7 @@ h1{
     border: solid #B2111E 1px;
     background: #ffffff;
     cursor: pointer;
+    margin: 10px;
 }
 .adcPedido .botao-adcPed:hover{
     background: rgba(178, 17, 30, 0.712);
