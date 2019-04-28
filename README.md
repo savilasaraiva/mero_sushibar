@@ -1,3 +1,3 @@
 # Mero - Sushi Bar
 
-https://savilasaraiva.github.io/mero_sushibar/
+https://edvaljunior.github.io/mero_sushibar/
